@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_SERVER_URL ? '' : 'http://localhost:3000',   // meta.env.PROD ? 배포서버주소 : 테스트서버주소 
+  baseURL: import.meta.env.VITE_SERVER_URL || 'http://localhost:3000'
 });
 
 axiosInstance.interceptors.request.use(     // Axios에서 모든 요청(Request)이 서버로 보내지기 전에 가로채서(request intercept) 특정 작업을 하도록 해주는 기능
