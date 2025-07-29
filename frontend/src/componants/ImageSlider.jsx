@@ -9,7 +9,7 @@ const ImageSlider = ({ images }) => {
           <img 
             src={`${import.meta.env.VITE_SERVER_URL}/${image}`}
             alt={image}
-            className='w-full max-h-[150px]'
+            className='w-full object-cover max-h-[200px]'
           />
         </div>
       ))}

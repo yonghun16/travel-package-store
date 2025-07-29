@@ -84,7 +84,7 @@ router.get('/', async (req, res, next) => {
   }
 
   if (term) {
-    // 사용자가 입력한 검색어(term)에 정규식 특수 문자가 포함되어 있을 경우를 대비해 اسکیپ 처리
+    // 사용자가 입력한 검색어(term)에 정규식 특수 문자가 포함되어 있을 경우를 대비
     const escapeRegex = (text) => {
       return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&');
     };
