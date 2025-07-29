@@ -26,7 +26,11 @@ mongoose.connect(process.env.MONGO_URI)
 
 
 /* Middleware */
-app.use(cors());
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173', // 환경 변수 또는 로컬 주소
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(express.json());  // req.body를 자바스크립트 객체로 파싱
 app.use(express.urlencoded({ extended: true }));    // req.body를 키/값 쌍 객체로 파싱 (중첩 구조도 가능)
 
