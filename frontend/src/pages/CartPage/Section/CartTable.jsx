@@ -36,7 +36,7 @@ const CartTable = ({ products, onRemoveItem }) => {
               {product.quantity} 개
             </div>
             <div className="col-span-6 sm:col-span-2 text-right font-semibold">
-              {product.price.toLocaleString()} 원
+              {product.price.toLocaleString()} 만원
             </div>
             <div className="col-span-12 sm:col-span-1 flex justify-end">
               <button onClick={() => onRemoveItem(product._id)} className="text-gray-400 hover:text-red-500 transition-colors">

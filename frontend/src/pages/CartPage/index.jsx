@@ -49,7 +49,7 @@ const CartPage = () => {
               <h3 className="text-xl font-semibold mb-4">주문 요약</h3>
               <div className="flex justify-between items-center text-lg font-bold">
                 <span>합계:</span>
-                <span>{total.toLocaleString()} 원</span>
+                <span>{total.toLocaleString()} 만원</span>
               </div>
               <button
                 className='w-full mt-6 bg-blue-500 text-white font-bold rounded-md py-3 hover:bg-blue-600 transition-colors duration-300'

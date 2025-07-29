@@ -25,7 +25,7 @@ const HistoryPage = () => {
               {userData.history.map((item) => (
                 <tr className='bg-white border-b hover:bg-gray-50' key={item.paymentId}>
                   <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">{item.id}</td>
-                  <td className="px-6 py-4">{item.price.toLocaleString()} 원</td>
+                  <td className="px-6 py-4">{item.price.toLocaleString()} 만원</td>
                   <td className="px-6 py-4">{item.quantity}</td>
                   <td className="px-6 py-4">{dayjs(item.dateOfPurchase).format('YYYY-MM-DD HH:mm:ss')}</td>
                 </tr>

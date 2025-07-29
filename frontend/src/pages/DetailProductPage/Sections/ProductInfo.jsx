@@ -17,7 +17,7 @@ const ProductInfo = ({ product }) => {
   return (
     <div className="p-6 bg-white rounded-lg shadow-sm border h-full flex flex-col">
       <h2 className="text-2xl font-bold text-gray-800 mb-2">{product.title}</h2>
-      <p className="text-3xl font-bold text-blue-600 mb-4">{product.price.toLocaleString()} 원</p>
+      <p className="text-3xl font-bold text-blue-600 mb-4">{product.price.toLocaleString()} 만원</p>
 
       <div className="text-gray-600 space-y-2 mb-6 flex-grow">
         <p><span className="font-semibold text-gray-900">판매된 개수:</span> {product.sold} 개</p>
