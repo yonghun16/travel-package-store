@@ -13,6 +13,7 @@
   - ID: user@user.user
   - PW: user12
 - 검색 시 디바운스 구현
+- Render 배포로 접속 후 15~20초 sleep 해제 시간 필요
 - Single-page
 
 
